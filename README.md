@@ -105,7 +105,7 @@ Verification of the private EC2 instance setup.
 ---
 
 ### 12. Private Instance Connectivity Test
-![Private Instance Connectivity](./12%20-%20Private%20IP%2C%20Terminal%20Access%2C%20Outbound%20Acce....PNG)
+![Private Instance Connectivity](./12%20-%20Private%20IP%2C%20Terminal%20Access%2C%20Outbound%20Access.PNG)
 
 Outbound connectivity from the private instance was successfully tested via the NAT Gateway.
 
