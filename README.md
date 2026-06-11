@@ -1,83 +1,103 @@
 # AWS VPC Networking Assignment
 
 ## 📌 Project Overview
-This project demonstrates the design and implementation of a secure and scalable AWS Virtual Private Cloud (VPC) architecture. The goal was to build a segmented network environment using public and private subnets, routing components, and security controls to replicate a real-world cloud infrastructure setup.
-
-The project focuses on core AWS networking principles including subnet design, routing, internet access control, and network security configuration.
+This project demonstrates the design and implementation of a secure AWS Virtual Private Cloud (VPC). The architecture includes public and private subnets, routing configuration, and security controls to simulate a real-world cloud networking environment.
 
 ---
 
 ## 🎯 Objectives
-- Design a custom Virtual Private Cloud (VPC)
-- Configure public and private subnets across availability zones
-- Implement secure routing using route tables
-- Enable controlled internet access using an Internet Gateway
-- Secure network traffic using Security Groups
-- Configure NAT Gateway for private subnet outbound access
+- Create a custom VPC in AWS
+- Configure public and private subnets
+- Set up an Internet Gateway for external connectivity
+- Configure route tables for traffic control
+- Apply Security Groups for access restriction
+- Implement NAT Gateway for private subnet access
 
 ---
 
 ## 🏗 Architecture Summary
 The architecture consists of:
-- A custom VPC with defined CIDR range
-- Public subnets for internet-facing resources
-- Private subnets for internal-only resources
-- Internet Gateway for public connectivity
-- Route tables to manage traffic flow
-- Security Groups to enforce access control
+- Custom VPC with CIDR block
+- Public and private subnets across availability zones
+- Internet Gateway for public access
+- Route tables for traffic control
+- Security Groups for instance-level protection
 
 ---
 
 ## 🪜 Implementation Steps
 
+---
+
 ### 1. VPC Creation
-A custom Virtual Private Cloud (VPC) was created to establish an isolated network environment within AWS.
+
+![VPC Creation](./1.%20VPC%20Creation.PNG)
+
+A custom Virtual Private Cloud (VPC) was created to establish an isolated network environment within AWS using a defined CIDR block.
 
 ---
 
 ### 2. Subnet Configuration
-Public and private subnets were created across multiple Availability Zones to improve availability and separate workloads based on exposure requirements.
+
+![Subnet Configuration](./2.%20Subnet%20Configuration.PNG)
+
+Public and private subnets were configured across multiple Availability Zones to separate internet-facing resources from internal workloads.
 
 ---
 
 ### 3. Internet Gateway Setup
-An Internet Gateway was attached to the VPC to allow resources in public subnets to communicate with the internet.
+
+![Internet Gateway](./3.%20Internet%20Gateway.PNG)
+
+An Internet Gateway was attached to the VPC to enable internet access for resources located in public subnets.
 
 ---
 
 ### 4. Route Table Configuration
-Route tables were configured to direct internet-bound traffic from public subnets through the Internet Gateway, while private subnets remained isolated.
+
+![Route Tables](./4.%20Route%20Tables.PNG)
+
+Route tables were configured to direct public subnet traffic through the Internet Gateway while keeping private subnet traffic isolated.
 
 ---
 
 ### 5. Security Groups
-Security Groups were implemented to control inbound and outbound traffic at the instance level, ensuring only required ports and protocols were allowed.
+
+![Security Groups](./5.%20Security%20Groups.PNG)
+
+Security Groups were implemented to control inbound and outbound traffic at the instance level, allowing only required ports and protocols.
 
 ---
 
-### 6. NAT Gateway 
-A NAT Gateway was deployed to allow instances in private subnets to access the internet securely without exposing them to inbound traffic.
+### 6. NAT Gateway
+
+![NAT Gateway](./6.%20NAT%20Gateway.PNG)
+
+A NAT Gateway was configured to allow secure outbound internet access for instances in private subnets without exposing them to inbound traffic.
 
 ---
 
-## 📸 Evidence
-Screenshots of each stage of the implementation are included in this repository, demonstrating configuration and setup within the AWS Management Console.
+## 🧪 Final Result
+
+![Final Architecture](./7.%20Final%20Architecture.PNG)
+
+The completed architecture demonstrates a fully functional AWS VPC with segmented networking, controlled routing, and secure access design.
 
 ---
 
 ## 🧠 Key Learnings
-- Understanding of VPC architecture and CIDR design
-- How AWS routing tables control network traffic flow
-- Difference between public and private subnet behaviour
+- VPC design and CIDR planning
+- Difference between public and private subnets
 - Role of Internet Gateway vs NAT Gateway
-- Importance of Security Groups in cloud security
+- Traffic control using route tables
+- Importance of Security Groups in AWS security
 
 ---
 
 ## 🚀 Outcome
-This project successfully demonstrates a functional AWS VPC architecture with segregated network layers, secure routing, and controlled internet access. It reflects foundational cloud networking knowledge applicable to real-world cloud infrastructure design.
+This project demonstrates a foundational understanding of AWS networking and cloud infrastructure design, replicating a secure and scalable production-style VPC environment.
 
 ---
 
-## 👤 Author
-Built as part of an AWS networking assignment demonstrating practical cloud infrastructure skills.
+## 👤 Author - Ismail
+AWS Networking Assignment – Cloud Infrastructure Project
