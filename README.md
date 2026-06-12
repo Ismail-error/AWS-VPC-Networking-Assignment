@@ -1,11 +1,11 @@
 # AWS VPC Networking Assignment
 
-## 📌 Project Overview
+## Project Overview
 This project demonstrates the design and deployment of a secure and scalable AWS Virtual Private Cloud (VPC). The architecture includes public and private subnets, routing configuration, and network security controls to simulate a real-world cloud infrastructure environment.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Design and build a custom VPC in AWS
 - Create and configure public and private subnets
 - Implement Internet Gateway for external connectivity
@@ -16,7 +16,7 @@ This project demonstrates the design and deployment of a secure and scalable AWS
 
 ---
 
-## 🏗 Architecture Overview
+## Architecture Overview
 The VPC is structured into:
 - Public Subnet: Hosts internet-facing resources (e.g. public EC2 instance)
 - Private Subnet: Hosts internal resources with no direct internet access
@@ -25,7 +25,7 @@ The VPC is structured into:
 
 ---
 
-## 🛠 Implementation Steps
+## Implementation Steps
 
 ### 1. VPC Creation
 ![VPC Creation](./1.%20vpc-creation.png)
@@ -111,7 +111,7 @@ Outbound connectivity from the private instance was successfully tested via the 
 
 ---
 
-## 🧠 Key Learnings
+## Key Learnings
 - AWS VPC design and network segmentation
 - Difference between public and private subnets
 - Role of Internet Gateway vs NAT Gateway
@@ -120,10 +120,10 @@ Outbound connectivity from the private instance was successfully tested via the 
 
 ---
 
-## 🚀 Conclusion
+## Conclusion
 This project demonstrates a fully functional AWS VPC architecture with secure segmentation, controlled internet access, and proper routing between public and private subnets. It reflects core cloud networking and security principles.
 
 ---
 
-## 👤 Author - Ismail
+## Author - Ismail
 AWS Networking Assignment – Cloud Infrastructure Project
